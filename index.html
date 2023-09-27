@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,48 +9,74 @@
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200&family=Wix+Madefor+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200&family=Wix+Madefor+Display&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-    
-    <nav class="nav">
-        <div>
-            <ul>
+    <header>
+        <h1 class="abrir-menu">B<font class="i">i</font>oTech Lab</h1>
+        <nav class="nav" id="nav">
+            <button class="abrir-menu" id="cerrar"><i class="fa-solid fa-xmark fa-2xl"></i></button>
+            <ul class="nav-list">
+
                 <li><a class="link" href="./intro.html">Introducción</a></li>
                 <li><a class="link" href="./aplicaciones.html">Aplicaciones</a></li>
                 <li><a class="link" href="">Genética</a></li>
                 <li><a class="link" href="">Agricultura</a></li>
             </ul>
-        </div>
-        <div>
+
+
             <img class="logo" id="logo" src="./assets/images/Logo-red-removebg-preview.png" alt="">
-        </div>
-        <div>
-            <ul>
+
+
+            <ul class="nav-list">
                 <li><a class="link" href="">Etica</a></li>
                 <li><a class="link" href="">Futuro</a></li>
                 <li><a class="link" href="">Empresas</a></li>
                 <li><a class="link" href="">Noticias</a></li>
-            </ul>
-        </div>
-    </nav>
 
-    <section >
+            </ul>
+        </nav>
+        <button class="abrir-menu" id="abrir"><i class="fa-solid fa-bars fa-lg"></i></button> 
+    </header>
+
+
+    <section>
         <div class="content-left">
             <h1>B<font class="i">i</font>oTech Lab</h1>
-            <p>Nuestra misión es proporcionar información actualizada y accesible sobre los avances más emocionantes en biotecnología, desde la ingeniería genética hasta la medicina regenerativa, la agricultura sostenible y más. <br> Descubre cómo esta ciencia multidisciplinaria está dando forma al presente y al futuro, abordando desafíos globales y mejorando la calidad de vida de las personas en todo el mundo. </p>
+            <p>Nuestra misión es proporcionar información actualizada y accesible sobre los avances más emocionantes en
+                biotecnología, desde la ingeniería genética hasta la medicina regenerativa, la agricultura sostenible y
+                más. <br> Descubre cómo esta ciencia multidisciplinaria está dando forma al presente y al futuro,
+                abordando desafíos globales y mejorando la calidad de vida de las personas en todo el mundo. </p>
             <button id="btn">Conocer Más</button>
         </div>
-            
+
 
         <div class="content-right">
-            <img id="prueba" class="img-content"  src="./assets/images/techny-dna.png" alt="error">
+            <img id="prueba" class="img-content" src="./assets/images/techny-dna.png" alt="error">
         </div>
-      
+
     </section>
-    
+    <script src="https://kit.fontawesome.com/89ea064196.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
     <script>
-      gsap.fromTo("#prueba", {autoAlpha: 0}, {autoAlpha: 1, duration: 5})
-    </script> 
+       gsap.fromTo("#prueba", { autoAlpha: 0 }, { autoAlpha: 1, duration: 5 }); 
+
+        const nav = document.querySelector('#nav');
+        const cerrar = document.querySelector('#cerrar');
+        const abrir = document.querySelector('#abrir');
+
+
+        abrir.addEventListener('click',()=>{
+            nav.classList.add('visible');
+            abrir.classList.add('cerrar-menu');
+        })
+
+        cerrar.addEventListener('click',()=>{
+            nav.classList.remove('visible');
+        })
+    </script>
 </body>
+
 </html>
