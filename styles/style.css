@@ -118,7 +118,7 @@ button:hover{
     right: 0;
 }
 
-@media screen and (max-width:550px){
+@media screen and (max-width:600px){
 
     .logo{
         display: none;
@@ -167,6 +167,7 @@ button:hover{
         padding: 1rem;
         box-shadow: 0 0 0 100vmax rgba(0,0,0, .5);
         align-items: end;
+        transition: all 1s ease;
 
     }
 
@@ -186,11 +187,26 @@ button:hover{
     }
     
     section{
-        flex-direction: column;
-    }
+        flex-direction: row-reverse;    
+        justify-content: center;
 
+        
+    }
+    .content-left{
+        width: 45%;
+        right:0;
+    }
+    .img-content{
+        width: 100%;
+        height: 100%
+    }
+    .content-right{
+        width: 45%;
+        gap: 10%
+    }
    section h1{
         display: none;
     }
 
 }
+

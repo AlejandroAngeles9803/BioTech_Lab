@@ -19,8 +19,8 @@
     <nav class="nav">
         <div>
             <ul>
-                <li><a class="link" href="">Introducción</a></li>
-                <li><a class="link" href="">Aplicaciones</a></li>
+                <li><a class="link" href="/intro.html">Introducción</a></li>
+                <li><a class="link" href="/aplicaciones.html">Aplicaciones</a></li>
                 <li><a class="link" href="">Genética</a></li>
                 <li><a class="link" href="">Agricultura</a></li>
             </ul>
@@ -39,7 +39,7 @@
     </nav>
 
     <section >
-        <div class="left">
+        <div class="left" >
             <h1 class="title">Introducción a la biotecnología</h1>
             <p class="paragraph">
                 La biotecnología es una rama de la ciencia que utiliza organismos vivos o sus partes para crear o
@@ -100,14 +100,14 @@
             scrollTrigger:{
                 trigger: '.section-info',
                 pin: true,
-                /* markers: true , */
+                markers: true , 
                 start: 'top top',
                 end: '100% 100%',
                 scrub: true,
             }
         })
 
-        tl.fromTo(left,{x:-99999, },{x:0, ease:"slow(0.7, 0.7, false)", duration:5})
+        tl.fromTo(left,{x:-99999, },{x:0, ease:Bounce.easeOut,delay:1, duration:10})
         tl.fromTo(imagesLeft,{y:-99999, },{y:0,  ease:"slow(0.7, 0.7, false)",  duration:5})
         tl.fromTo(imagesRight,{y:-99999, },{y:0, ease:"slow(0.7, 0.7, false)", duration:5 })
         
