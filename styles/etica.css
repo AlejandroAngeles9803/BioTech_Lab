@@ -86,6 +86,13 @@ header:hover{
     flex-direction: column;
     padding-top: 10%;
 }
+
+.sec{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
 .title{
     margin: 3%;
     font-size: 55px;
@@ -125,8 +132,6 @@ header:hover{
 .text_area.show{
     box-shadow: -6px -7px 22px 12px rgba(0,0,0,0.37);
     transition: box-shadow .5s;
-    
-
 }
 .text_area h1{
     margin: 1%;
@@ -137,6 +142,8 @@ header:hover{
     width: 90%;
     opacity: .8;
     border-radius: 10%;
+    object-fit: cover;
+    object-position: center;
 }
 
 .paragraph{
@@ -170,7 +177,7 @@ header:hover{
     rotate: 90deg;
     
 }
-
+  
 @media screen and (max-width:600px){
 
     .logo{

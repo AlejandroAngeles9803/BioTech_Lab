@@ -93,15 +93,18 @@ section{
     width: 100%;
 }
 
-@media screen and (max-width:550px){
 
-    .logo{
+@media screen and (max-width:600px){
+    logo{
         display: none;
     }
     
 
     .abrir-menu,.cerrar-menu{
         display: block;
+    }
+    .i{
+    color: #F3C800;
     }
 
     #abrir{
@@ -142,6 +145,7 @@ section{
         padding: 1rem;
         box-shadow: 0 0 0 100vmax rgba(0,0,0, .5);
         align-items: end;
+        transition: all 1s ease;
 
     }
 
@@ -160,12 +164,23 @@ section{
         padding: 1rem;
     }
     
-    section{
+
+    .wrapper{
+        display: flex;
         flex-direction: column;
+        gap: 10px;
+        width: 80%;
+        margin-left: 50px ;
     }
 
-   section h1{
-        display: none;
+    .paragraph{
+        flex-wrap: wrap;
+        font-size: 20px;
     }
 
+    .img-area{
+        width: 40%;
+        opacity: .8;
+        border-radius: 10%;
+    }
 }
