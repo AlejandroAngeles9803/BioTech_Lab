@@ -30,11 +30,20 @@ btn.addEventListener('click', () => {
     if (text1.classList.contains('show')) {
         text1.classList.remove('show');
         paragraph.classList.remove('show');
-
+        gsap.from('#text-3',{
+            yPercent: 5,
+            ease: Bounce.easeIn,
+            duration: 2,
+        })
 
     } else {
         text1.classList.add('show');
         paragraph.classList.add('show');
+        gsap.from('#text-3',{
+            yPercent: 5,
+            ease: Bounce.easeIn,
+            duration: 2,
+        })
 
     }
 
@@ -45,11 +54,20 @@ btn2.addEventListener('click', () => {
     if (text2.classList.contains('show')) {
         text2.classList.remove('show');
         paragraph2.classList.remove('show');
-
+        gsap.from('#text-3',{
+            yPercent: 5,
+            ease: Bounce.easeIn,
+            duration: 2,
+        })
 
     } else {
         text2.classList.add('show');
         paragraph2.classList.add('show');
+        gsap.from('#text-3',{
+            yPercent: 5,
+            ease: Bounce.easeIn,
+            duration: 2,
+        })
 
     }
 
