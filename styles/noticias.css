@@ -135,6 +135,7 @@ header:hover{
 }
 .img-area{
     width: 90%;
+    height: 50%;
     opacity: .8;
     border-radius: 10%;
 }
