@@ -143,6 +143,7 @@ header:hover{
 .paragraph{
     text-align: justify;
     margin: 2%;
+    height: 50%;
     padding: 15px 0;
     font-size: 35px;
 }
