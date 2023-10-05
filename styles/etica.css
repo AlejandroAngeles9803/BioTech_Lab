@@ -141,6 +141,7 @@ header:hover{
 .img-area{
     width: 90%;
     opacity: .8;
+    height: 50%;
     border-radius: 10%;
     object-fit: cover;
     object-position: center;
